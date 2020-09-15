@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ActiveBox, Web-development, Layout, Landing Page">
+
 	<title>ActiveBox</title>
 	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="alternate" media="only screen and (max-width: 640px)"
+ href="http://m.example.com/">
 </head>
 <body>
+
+
 	<!-- Sprite -->
 	<svg style="display: none;">
 		<symbol id="facebook" viewBox="0 0 24 24">
@@ -32,8 +39,26 @@
 				<path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-256 406h-60v-210h60zm0-240h-60v-60h60zm210 240h-60v-120c0-16.539062-13.460938-30-30-30s-30 13.460938-30 30v120h-60v-210h60v11.308594c15.71875-4.886719 25.929688-11.308594 45-11.308594 40.691406.042969 75 36.546875 75 79.6875zm0 0"/>
 			</g>
 		</symbol>
+		<symbol id="radar" viewBox="0 0 512 512">
+			<g>
+				<path d="M116,256c0-37.42,14.562-72.6,41.005-99.059c7.811-7.816,7.811-20.488,0-28.303c-7.81-7.817-20.473-7.817-28.284-0.001
+				C94.723,162.657,76,207.888,76,256s18.723,93.343,52.721,127.363c7.81,7.815,20.473,7.815,28.284-0.001
+				c7.811-7.815,7.811-20.487,0-28.303C130.562,328.6,116,293.42,116,256z"/>
+			<path d="M40,256c0-57.734,22.468-112.012,63.264-152.835c7.811-7.816,7.811-20.488,0-28.304c-7.811-7.815-20.474-7.815-28.284,0
+				C26.628,123.246,0,187.575,0,256s26.628,132.754,74.981,181.139c7.809,7.814,20.473,7.816,28.284,0
+				c7.811-7.816,7.811-20.488,0-28.304C62.468,368.012,40,313.734,40,256z"/>
+			<path d="M256,151.932c-57.346,0-104,46.685-104,104.068s46.654,104.068,104,104.068S360,313.383,360,256
+				S313.346,151.932,256,151.932z M256,320.042c-35.29,0-64-28.729-64-64.042s28.71-64.042,64-64.042c35.29,0,64,28.729,64,64.042
+				S291.29,320.042,256,320.042z"/>
+			<path d="M437.018,74.861c-7.81-7.816-20.473-7.815-28.284,0.001c-7.811,7.816-7.81,20.487,0.001,28.303
+				C449.532,143.988,472,198.266,472,256s-22.468,112.012-63.264,152.835c-7.811,7.816-7.812,20.487-0.001,28.303
+				c7.808,7.814,20.471,7.819,28.284,0.001C485.371,388.754,512,324.425,512,256S485.371,123.246,437.018,74.861z"/>
+			<path d="M383.278,128.637c-7.81-7.816-20.473-7.815-28.284,0.001c-7.811,7.816-7.81,20.487,0.001,28.303
+				C381.437,183.4,396,218.58,396,256c0,37.42-14.562,72.6-41.005,99.059c-7.811,7.816-7.812,20.487-0.001,28.303
+				c7.808,7.814,20.471,7.819,28.284,0.001C417.276,349.343,436,304.112,436,256S417.276,162.657,383.278,128.637z"/>
+			</g>
+		</symbol>
 	</svg>
-
 
 	<header class="header">
 		<div class="container">
@@ -41,6 +66,7 @@
 				<div class="logo">
 					<img src="img/logo/ActiveBox.png" alt="">
 				</div>
+
 				<nav class="nav">
 					<a href="" class="nav__link">Features</a>
 					<a href="" class="nav__link">Works</a>
@@ -48,6 +74,10 @@
 					<a href="" class="nav__link">Testimonials</a>
 					<a href="" class="nav__link">Download</a>
 				</nav>
+
+				<div class="burger">
+					<span class="burger__item"></span>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -187,15 +217,15 @@
 	<div class="team">
 		<div class="container">
 			<div class="team-wrapper">
+
 				<div class="team__item">
-					<div class="team__photo">
-						<img src="img/team/team1.jpg" alt="">
-					</div>
+					<img class="team__photo" src="img/team/team1.jpg" alt="">
 					<div class="team__name">Ruth Woods</div>
 					<div class="team__profession">Founder ceo</div>
 					<div class="team__description">
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					</div>
+
 					<div class="social">
 						<a href="#" class="social__link">
 							<svg class='social__icon facebook'>
@@ -214,15 +244,15 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="team__item">
-					<div class="team__photo">
-						<img src="img/team/team2.jpg" alt="">
-					</div>
+					<img class="team__photo" src="img/team/team2.jpg" alt="">
 					<div class="team__name">Timothy Reed</div>
 					<div class="team__profession">co-Founder developer</div>
 					<div class="team__description">
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					</div>
+
 					<div class="social">
 						<a href="#" class="social__link">
 							<svg class='social__icon facebook'>
@@ -241,15 +271,15 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="team__item">
-					<div class="team__photo">
-						<img src="img/team/team3.jpg" alt="">
-					</div>
+					<img class="team__photo" src="img/team/team3.jpg" alt="">
 					<div class="team__name">Victoria Valdez</div>
 					<div class="team__profession">ui design</div>
 					<div class="team__description">
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					</div>
+
 					<div class="social">
 						<a href="#" class="social__link">
 							<svg class='social__icon facebook'>
@@ -268,15 +298,15 @@
 						</a>
 					</div>
 				</div>
+
 				<div class="team__item">
-					<div class="team__photo">
-						<img src="img/team/team4.jpg" alt="">
-					</div>
+					<img class="team__photo" src="img/team/team4.jpg" alt="">
 					<div class="team__name">Beverly Little</div>
 					<div class="team__profession">data scientist</div>
 					<div class="team__description">
 						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					</div>
+
 					<div class="social">
 						<a href="#" class="social__link">
 							<svg class='social__icon facebook'>
@@ -295,10 +325,22 @@
 						</a>
 					</div>
 				</div>
+
 			</div>	<!-- /team-wrapper -->
 		</div> <!-- /container -->
 	</div> <!-- /team -->
-	<div class="slider">
+	<div class="reviews">
+		<div class="container">
+			<div class="reviews__item">
+				<div class="reviews__photo">
+					<img src="img/reviews/review1.jpg" alt="" class="reviews__photo--pos">
+				</div>
+				<div class="reviews__content">
+					<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+					<div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="download">
 		<div class="container">
@@ -342,11 +384,15 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<footer class="footer">
 			<p class="footer__text">Copyright © 2015 ActiveBox. All Rights Reserved</p>
 			<p class="footer__text">Made with love <a href="" class="footer__link">by someSheet</a></p>
 	</footer>
+
+
+	<script src="js/app.js"></script>
+
 </body>
 </html>
 
